@@ -57,7 +57,7 @@ if(CATKIN_ENABLE_TESTING)
     get_target_property(_target_path test_Driver RUNTIME_OUTPUT_DIRECTORY)
 
     add_test(NAME test_Driver
-        COMMAND "${_target_path}/test_Driver" --log_format=xml
+        COMMAND "${_target_path}/test_Driver" --log_format=XML
                                               --log_level=all
                                               --log_sink=${CATKIN_TEST_RESULTS_DIR}/${PROJECT_NAME}/boost-test_Driver.xml
         DEPENDENCIES test_Driver
